@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Web Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Assuming CSS is saved as style.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">My<span>Site</span></a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="fas fa-bars"></div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-text">
+            <h1>HI! I AM  <span>Sanya Kulshrestha</span></h1>
+            <h3>Web Developer and Designer</h3>
+            <p>"Transforming ideas into responsive and interactive digital solutions through creative coding and design."</p>
+            <div class="button">
+                <a href="#about" class="btn">About ME</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="sanya.jpeg" alt="My pic">
+        </div>
+        <div class="about-text">
+            <h2>Get to know me</h2>
+            <h4>"Web Developer in the Making – Pursuing knowledge and hands-on experience to build impactful, user-centric websites."</h4>
+            <p>I'm a budding web developer and college student with a passion for learning and growth. I’m currently diving into the world of front-end development, exploring new technologies to enhance my skills. With each project, I aim to create intuitive, visually appealing, and responsive designs. Eager to expand my knowledge, I’m committed to building a strong foundation for a future in tech.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="main-text">
+            <p>My Tech Stack</p>
+            <h2>SKILLS</h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web Development</h3>
+                <p>High design frontend webpages with HTML,CSS and JAVASCRIPT including some frameworks like reactJs and tailwind.</p>
+                <P>NODEjs, MySQL, MongoDB for backend</P>
+            </div>
+            <div class="box">
+                <div class="s-icons"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Mobile Apps</h3>
+                <p>Custom mobile applications frontend using flutter and figma.</p>
+            </div>
+            <div class="box">
+                <div class="s-icons"><i class="fas fa-database"></i></div>
+                <h3>Web 3</h3>
+                <p>Exploring the world on crypto and web3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="main-text">
+            <p>Our Work</p>
+            <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="wea.jpeg" alt="Project 1">
+                <div class="layer">
+                    <h5>Weather App using Reactjs in VITE</h5>
+                    <p>"A simple and interactive weather app built with React.js, displaying real-time weather information based on user location or search. Designed for quick, accurate updates with a clean and user-friendly interface.I used open weather api in this to render real time data."</p>
+                    <i class="https://github.com/sanyak-1/weather-app.git"></i>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Spotify.png" alt="Project 2">
+                <div class="layer">
+                    <h5>Frontend spotify clone</h5>
+                    <p>A Spotify clone built with HTML, CSS, and JavaScript features a music player interface with play/pause controls and a responsive layout, mimicking Spotify’s user experience.</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <img src="list.png" alt="Project 3">
+                <div class="layer">
+                    <h5>TO DO LIST</h5>
+                    <p>A to-do list app built with HTML, CSS, and JavaScript allows users to add, mark as complete, and delete tasks, helping organize daily tasks in a simple interface.</p>
+                    <i class="fas fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-text">
+            <h4>Get in Touch!</h4>
+            <h2>Contact ME</h2>
+            <p>Lets connect and collaborate</p>
+            <ul class="list">
+                <li><a href="#">+91 9354384778</a></li>
+                <li><a href="#">sk9247@srmist.edu.in</a></li>
+                <li><a href="#">SRM university</a></li>
+            </ul>
+            <div class="contact-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.hackerrank.com/profile/sk92471">Visit my Hackerrank!</a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="end">
+        <div class="last-text">
+            <p>&copy; 2024 MySite. All Rights Reserved.</p>
+        </div>
+        <div class="top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuIcon = document.getElementById('menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
